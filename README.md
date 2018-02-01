@@ -4,19 +4,27 @@ This is a sample project to demonstrate how to run a Celery task inside a Django
 
 You can read step-by-step instructions here <-- link TBD. 
 
-## Running the project locally 
+## Local development setup
 
-Uses [`pyenv-virtualenvwrapper`](https://github.com/pyenv/pyenv-virtualenvwrapper). 
+Fork this repo into your own GitHub space.
 
-1. Fork this repo into your own GitHub space
-2. `cd` into the directory where you keep Git projects 
-3. `git clone git@github.com:[your_username]/celery-docker-example.git proj` Note to add `proj` to the end of the command so it clones onto your machine with a shorter, easier-to-type name
-4. `mkvirtualenv [env_name] --python==python3.6`
-5. `workon [env_name]`
-6. `cd proj`
-7. `setvirtualenvproject`
-8. `docker-compose up` 
-9. See output in terminal! 
+Clone this project as `proj`: 
+
+    git clone git@github.com:[your_username]/celery-docker-example.git proj
+
+Note to add `proj` to the end of the command so it clones onto your machine with a shorter, easier-to-type name.
+
+Make a Python 3.6.x virtual environment and install the dependencies: 
+
+    pip install -r requirements.txt
+
+## Setting up docker-compose 
+
+Using a virtual environment, even when using Docker, is useful so you have easy access to your dependecies and are still isolated from other projects. 
+
+Assuming you have [Docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed, activate your virtual environment and run
+
+    docker-compose up
 
 ## Questions?
 
