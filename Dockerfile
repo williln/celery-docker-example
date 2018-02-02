@@ -9,5 +9,3 @@ COPY . /code/
 WORKDIR /code/
 
 EXPOSE 8000
-
-EXPOSE 8000
